@@ -5,4 +5,4 @@
   export let data: PageData;
 </script>
 
-<BarChart {data} />
+<BarChart data={data.popData.default} />
