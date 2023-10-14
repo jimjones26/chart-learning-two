@@ -23,7 +23,7 @@
     .range([0, innerWidth]);
 </script>
 
-<svg {width} {height}>
+<svg viewBox={`0 0 ${width} ${height}`}>
   <g transform={`translate(${margin.left},${margin.top})`}>
     {#each xScale.ticks() as tickValue}
       <g transform={`translate(${xScale(tickValue)},0)`}>
